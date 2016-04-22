@@ -6,15 +6,23 @@
 		<style>
 			#container { position: relative; }
 			#imageView { border: 1px solid #000; }
-		</style>
+		</style>	
 	</head>
 	<body>
 		<div id="container">
 			<canvas id="imageView" width="400" height="300">
-				<p>zup man</p>
+				<p>Browser not supported.</p>
 				<p>Supported browsers: <a href="https://www.opera.com">Opera</a>, <a href="http://www.mozilla.com">Firefox</a>, <a href="http://www.apple.com/safari">Safari</a>, and <a href="http://www.konqueror.org">Konqueror</a>.</p>
 			</canvas>
 		</div>
-		<script src="example1.js"></script>
+		<div>
+			<label>Drawing tool:
+				<select id="dtool">
+					<option value="rect">Rectangle</option>
+					<option value="pencil">Pencil</option>
+				</select>
+			</label>
+		</div>
+		<script src="mousemove.js"></script>
 	</body>
 </html>
